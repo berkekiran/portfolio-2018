@@ -19,11 +19,10 @@
     <!-- External -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link type="text/css" rel="stylesheet" href="css/portfolio.css">
     <script src="js/portfolio.js"></script>
-    <script src="js/characters.js"></script>
-    <script src="js/games.js"></script>
-    <script src="js/websites.js"></script>
+    <script src="js/works.js"></script>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700|Roboto:400,400i,700" rel="stylesheet">
     <!--Favicons-->
@@ -34,14 +33,14 @@
 
       <section class="intro">
         <p class="welcomeText">
-          Hi, I am <span id="logo">Berke Kiran</span>. I am a self-taught 3d <br>
+          Hi, I am <span id="logo">Berke Kiran</span>(21). I am a self-taught 3d <br>
           character artist and front-end developer from<br>
           canakkale, turkey. I am specialized in creating <br>
           3d characters for cinematics, feature film and <br>
           games. I love to create dynamic, responsive <br>
           websites & apps.<br><br>
           If you have a project you'd like to discuss, <br>
-          feel free to <a href="mailto:berkekiranofficial@hotmail.com?Subject=Hi Berke!" id="readOut">reach out</a>.
+          feel free to <a href="mailto:berkekiranofficial@hotmail.com?Subject=Hi Berke!">reach out</a>.
         </p>
         <div id="showreel">
           <div id="playLink">
@@ -50,57 +49,39 @@
         </div>
         <span id="showreelText">© 2018 Showreel, Berke Kiran <a href="#">Vimeo</a></span><br>
       </section>
-      <span class="headB">WHAT I DID ?</span><br>
-      <span class="headS">I love to create somethings never created.</span><br>
-      <section class="characters">
-        <span class="head">CHARACTERS</span><br>
-        <div class="prev"></div><div class="next"></div>
-        <ul class="characters-ul" ng-controller="charactersController as ocharacters">
-          <li ng-style="{{elem.Image}}" class="characters-li" ng-repeat="elem in ocharacters.character | limitTo:ocharacters.limit">
-            <span class="charactersName">{{elem.ProjectName}}</span><br>
-            <span class="charactersCY">
-              <span class="charactersCategory">{{elem.Category}}</span>, <span class="charactersYear">{{elem.Year}}</span>
+
+      <section class="works">
+        <span id="worksChead">Categories</span><br>
+        <ul id="worksCselect">
+          <li>All</li>
+          <li>Characters</li>
+          <li>Websites</li>
+          <li>Games</li>
+          <li>Videos</li>
+          <li>Soundtracks</li>
+          <li>Sketchbooks</li>
+          <li>Sprites</li>
+          <li>Digital Artworks</li>
+          <li>UE4 Projects</li>
+          <li>Silverlight Projects</li>
+        </ul>
+        <ul class="works-ul" ng-controller="worksController as oworks">
+          <li class="works-li" ng-repeat="elem in oworks.work | limitTo:oworks.limit">
+            <a target="_blank" class ng-href="{{elem.Link}}"></a>
+            <div class="worksIco"></div>
+            <span class="worksName">{{elem.ProjectName}}</span><br>
+            <span class="worksCY">
+              <span class="worksCategory">{{elem.Category}}</span>, <span class="worksYear">{{elem.Year}}</span>
             </span>
+            <div ng-style="{{elem.Image}}" class="worksImg"></div>
           </li>
         </ul>
       </section>
 
-      <section class="websites">
-        <span class="head">WEBSITES</span><br>
-        <div class="prev"></div><div class="next"></div>
-        <ul class="websites-ul" ng-controller="websitesController as owebsites">
-            <li class="websites-li" ng-repeat="elem in owebsites.website | limitTo:owebsites.limit">
-              <div ng-style="{{elem.Logo}}" class="websitesLogo"></div>
-              <span class="websitesName">{{elem.ProjectName}}</span><br>
-              <span class="websitesCY">
-                <span class="websitesCategory">{{elem.Category}}</span>, <span class="charactersYear">{{elem.Year}}</span>
-              </span>
-              <div ng-style="{{elem.Image}}" class="websitesImg"></div>
-              <a ng-style="{{elem.Link0Image}}" ng-href="{{elem.Link0}}" class="websitesLinks0"></a>
-              <a ng-style="{{elem.Link1Image}}" ng-href="{{elem.Link1}}"  class="websitesLinks1"></a>
-            </li>
-          </ul>
-        </section>
+      <section class="outro">
+          <span>© 2018 Berke Kiran</span>
+      </section>
 
-        <section class="games">
-          <span class="head">GAMES</span><br>
-          <div class="prev"></div><div class="next"></div>
-          <ul class="games-ul" ng-controller="gamesController as ogames">
-              <li class="games-li" ng-repeat="elem in ogames.game | limitTo:ogames.limit">
-                <div ng-style="{{elem.Logo}}" class="gamesLogo"></div>
-                <span class="gamesName">{{elem.ProjectName}}</span><br>
-                <span class="gamesCY">
-                  <span class="gamesCategory">{{elem.Category}}</span>, <span class="charactersYear">{{elem.Year}}</span>
-                </span>
-                <div ng-style="{{elem.Image}}" class="gamesImg"></div>
-                <a ng-style="{{elem.Link0Image}}" ng-href="{{elem.Link0}}" class="gamesLinks0"></a>
-                <a ng-style="{{elem.Link1Image}}" ng-href="{{elem.Link1}}" class="gamesLinks1"></a>
-              </li></ul>
-          </section>
-
-          <section class="outro">
-            <span>© 2018 Berke Kiran</span>
-          </section>
     </section>
 
   </body>

@@ -17,14 +17,12 @@
     <!-- Androclass Tab Color -->
     <meta name="theme-color" content="#0d1114">
     <!-- External -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/angular-route.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/velocity.min.js"></script>
     <link type="text/css" rel="stylesheet" href="css/portfolio.css">
     <script src="js/portfolio.js"></script>
-    <script src="js/works.js"></script>
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700|Roboto:400,400i,700" rel="stylesheet">
     <!--Favicons-->
   </head>
 
@@ -50,30 +48,21 @@
         <span id="showreelText">© 2018 Showreel, Berke Kiran <a href="#">Vimeo</a></span><br>
       </section>
 
-      <section class="works">
+      <section class="works" ng-controller="worksController">
         <span id="worksChead">Categories</span><br>
         <ul id="worksCselect">
-          <li>All</li>
-          <li>Characters</li>
-          <li>Websites</li>
-          <li>Games</li>
-          <li>Videos</li>
-          <li>Soundtracks</li>
-          <li>Sketchbooks</li>
-          <li>Sprites</li>
-          <li>Digital Artworks</li>
-          <li>UE4 Projects</li>
-          <li>Silverlight Projects</li>
+          <li ng-repeat="workCategory in worksCategories" ng-click="setFilterCategory(workCategory.Category)">
+            {{workCategory.Category}}<br>
+          </li>
         </ul>
-        <ul class="works-ul" ng-controller="worksController as oworks">
-          <li class="works-li" ng-repeat="elem in oworks.work | limitTo:oworks.limit">
-            <a target="_blank" class ng-href="{{elem.Link}}"></a>
-            <div class="worksIco"></div>
-            <span class="worksName">{{elem.ProjectName}}</span><br>
+        <ul class="works-ul">
+          <li class="works-li" ng-repeat="work in works | filter: filterByCategory  as filtered">
+            <a target="_blank" class ng-href="{{work.Link}}"></a>
+            <span class="worksName">{{work.ProjectName}}</span><br>
             <span class="worksCY">
-              <span class="worksCategory">{{elem.Category}}</span>, <span class="worksYear">{{elem.Year}}</span>
+              <span class="worksCategory">{{work.Category}}</span>, <span class="worksYear">{{work.Year}}</span>
             </span>
-            <div ng-style="{{elem.Image}}" class="worksImg"></div>
+            <div ng-style="{{work.Image}}" class="worksImg"></div>
           </li>
         </ul>
       </section>

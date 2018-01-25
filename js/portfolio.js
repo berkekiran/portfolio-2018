@@ -1,6 +1,6 @@
-var app = angular.module("portfolio", []);
+var app = angular.module('portfolio', []);
 
-app.controller('worksController', function($scope) {
+app.controller('portfolioController', function($scope) {
 
   $scope.works = [
                   {
@@ -293,7 +293,9 @@ app.controller('worksController', function($scope) {
 
   $scope.numberofworks = $scope.works.length * 450;
   $(".works").css({'width': $scope.numberofworks + 'px'});
-
+  $('.works-li').each(function(item) {
+      $(this).velocity({'opacity': '0'}, 0);
+  });
   $scope.selectedCategory = '';
 
   $scope.setFilterCategory = function(value) {
@@ -303,8 +305,12 @@ app.controller('worksController', function($scope) {
   $scope.filterByCategory = function(item) {
     if ($scope.selectedCategory){
       $(".works").css({'width': $scope.filtered.length * 450 + 'px'});
-      if($scope.selectedCategory == 'All')
+      $('.works-li').each(function(item) {
+          $(this).delay(500*item).velocity({'opacity': '1'}, 1000);
+      });
+      if($scope.selectedCategory == 'All'){
         return item;
+      }
       else{
         return $scope.selectedCategory === item.CategoryAlt;
       }
@@ -313,5 +319,39 @@ app.controller('worksController', function($scope) {
       return item;
     }
   };
+
+  $scope.playShowreel = function() {
+    $('#playLink').velocity({'opacity': ['0', '1'] }, 500);
+    $('#teasermp4').velocity({'opacity': ['0', '1'] }, 500);
+    setTimeout(function(){
+      $('#playLink').css({'display': 'none'});
+      $('#teasermp4').css({'display': 'none'});
+      $('#showreelVimeo').css({'display': 'block'});
+    }, 500);
+    setTimeout(function(){
+      var jqueryPlayer = new Vimeo.Player($('#showreelVimeo'));
+      jqueryPlayer.play()
+    }, 500);
+    $('#showreelVimeo').velocity({'opacity': ['1', '0']}, 1000);
+  };
+
+  $('.introRow').each(function(i) {
+      $(this).delay(500*i).velocity({'opacity': '1', 'top': 0 + 'px'}, 1000);
+  });
+
+  setTimeout(function(){
+    $('#showreel').delay(500).velocity({'opacity': '1'}, 1000);
+    $('#showreelText').delay(1000).velocity({'opacity': '1', 'top': 0 + 'px'}, 1000);
+    $('#worksChead').delay(1500).velocity({'opacity': '1'}, 1000);
+    $('.workCatClass').each(function(i) {
+        $(this).delay(250*i).velocity({'opacity': '1'}, 1000);
+    });
+    $('.works-li').delay(2250).each(function(i) {
+        $(this).delay(500*i).velocity({'opacity': '1'}, 1000);
+    });
+    $('.outro').delay(2750).velocity({'opacity': '1', 'top': 0 + 'px'}, 1000);
+  }, 4000);
+
+  // $('.works-ul').velocity({'margin-left': -1 * $scope.numberofworks + 'px'}, 15000);
 
 });

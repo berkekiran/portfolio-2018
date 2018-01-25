@@ -17,41 +17,47 @@
     <!-- Androclass Tab Color -->
     <meta name="theme-color" content="#0d1114">
     <!-- External -->
+    <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/angular-route.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/velocity.min.js"></script>
-    <link type="text/css" rel="stylesheet" href="css/portfolio.css">
-    <script src="js/portfolio.js"></script>
+    <script src="js/player.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/portfolio.min.css">
+    <script src="js/portfolio.min.js"></script>
     <!--Favicons-->
   </head>
 
-  <body>
+  <body ng-controller="portfolioController">
     <section class="wrapper">
 
       <section class="intro">
         <p class="welcomeText">
-          Hi, I am <span id="logo">Berke Kiran</span>(21). I am a self-taught 3d <br>
-          character artist and front-end developer from<br>
-          canakkale, turkey. I am specialized in creating <br>
-          3d characters for cinematics, feature film and <br>
-          games. I love to create dynamic, responsive <br>
-          websites & apps.<br><br>
-          If you have a project you'd like to discuss, <br>
-          feel free to <a href="mailto:berkekiranofficial@hotmail.com?Subject=Hi Berke!">reach out</a>.
+          <span class="introRow">Hi, I am <span id="logo">Berke Kiran</span>(21). I am a self-taught 3d <br></span>
+          <span class="introRow">character artist and front-end developer from<br></span>
+          <span class="introRow">canakkale, turkey. I am specialized in creating <br></span>
+          <span class="introRow">3d characters for cinematics, feature film and <br></span>
+          <span class="introRow">games. I love to create dynamic, responsive <br></span>
+          <span class="introRow">websites & apps.<br><br></span>
+          <span class="introRow">If you have a project you'd like to discuss, <br></span>
+          <span class="introRow">feel free to <a href="mailto:berkekiranofficial@hotmail.com?Subject=Hi Berke!">reach out</a>.</span>
         </p>
         <div id="showreel">
-          <div id="playLink">
+          <iframe id="showreelVimeo" src="https://player.vimeo.com/video/244029667" width="1200" height="675" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <div id="playLink" ng-click="playShowreel()">
             <div id="playButton"></div>
           </div>
+          <video autoplay muted loop id="teasermp4">
+            <source src="../images/teaser.mp4" type="video/mp4">
+          </video>
         </div>
-        <span id="showreelText">© 2018 Showreel, Berke Kiran <a href="#">Vimeo</a></span><br>
+        <span id="showreelText">© 2017 Showreel, Berke Kiran <a target="_blank" href="https://vimeo.com/244029667">Vimeo</a></span><br>
       </section>
 
-      <section class="works" ng-controller="worksController">
+      <section class="works">
         <span id="worksChead">Categories</span><br>
         <ul id="worksCselect">
-          <li ng-repeat="workCategory in worksCategories" ng-click="setFilterCategory(workCategory.Category)">
+          <li class="workCatClass" ng-repeat="workCategory in worksCategories" ng-click="setFilterCategory(workCategory.Category)">
             {{workCategory.Category}}<br>
           </li>
         </ul>

@@ -9,7 +9,8 @@ app.controller('portfolioController', function($scope) {
                     CategoryAlt: "Videos",
                     Year: "2018",
                     Link: "https://vimeo.com/249373398",
-                    Image: {"background-image" : "url('https://i.vimeocdn.com/video/675169794_640x1138.jpg')"}
+                    Image: {"background-image" : "url('https://i.vimeocdn.com/video/675169794_640x1138.jpg')"},
+                    Tools: "After Effects, Adobe Photoshop CC"
                   },
                   {
                     ProjectName: "B21",
@@ -17,14 +18,16 @@ app.controller('portfolioController', function($scope) {
                     CategoryAlt: "Games",
                     Year: "2018",
                     Link: "https://play.google.com/store/apps/details?id=com.berkekiran.b21",
-                    Image: {"background-image" :  "url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/28ad7c60331263.5a47c71711730.png')"}
+                    Image: {"background-image" :  "url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/28ad7c60331263.5a47c71711730.png')"},
+                    Tools: "Unity 3D, Adobe Photoshop CC, Audacity, Soundtrap"
                   },
                   { ProjectName: "B21 Soundtrack",
                     Category: "Soundtrack",
                     CategoryAlt: "Soundtracks",
                     Year: '2018',
                     Link: 'https://soundcloud.com/berkekiran/b21-soundtrack',
-                    Image: {"background-image" :  "url('https://i1.sndcdn.com/artworks-000273726992-0cts00-t500x500.jpg')"}
+                    Image: {"background-image" :  "url('https://i1.sndcdn.com/artworks-000273726992-0cts00-t500x500.jpg')"},
+                    Tools: "Soundtrap,  Audacity"
                   },
                   { ProjectName: "Showreel 2017 (2nd)",
                     Category: "Video",
@@ -82,7 +85,7 @@ app.controller('portfolioController', function($scope) {
                     Link: "https://www.artstation.com/artwork/2V4Lx",
                     Image: {"background-image" :  "url('https://cdna.artstation.com/p/assets/images/images/006/823/800/large/berke-kiran-screenshot006.jpg?1501534299')"}
                   },
-                  { ProjectName: "Berke Kiran' Sketchbook",
+                  { ProjectName: "Berke Kiran's Sketchbook",
                     Category: "Sketchbook",
                     CategoryAlt: "Sketchbooks",
                     Year: '2017',
@@ -290,68 +293,4 @@ app.controller('portfolioController', function($scope) {
                             { Category: "Sketchbooks"},
                             { Category: "Other Projects"}
                            ];
-
-  $scope.numberofworks = $scope.works.length * 450;
-  $(".works").css({'width': $scope.numberofworks + 'px'});
-  $('.works-li').each(function(item) {
-      $(this).velocity({'opacity': '0'}, 0);
-  });
-  $scope.selectedCategory = '';
-
-  $scope.setFilterCategory = function(value) {
-    $scope.selectedCategory = value;
-  };
-
-  $scope.filterByCategory = function(item) {
-    if ($scope.selectedCategory){
-      $(".works").css({'width': $scope.filtered.length * 450 + 'px'});
-      $('.works-li').each(function(item) {
-          $(this).delay(500*item).velocity({'opacity': '1'}, 1000);
-      });
-      if($scope.selectedCategory == 'All'){
-        return item;
-      }
-      else{
-        return $scope.selectedCategory === item.CategoryAlt;
-      }
-    }
-    else{
-      return item;
-    }
-  };
-
-  $scope.playShowreel = function() {
-    $('#playLink').velocity({'opacity': ['0', '1'] }, 500);
-    $('#teasermp4').velocity({'opacity': ['0', '1'] }, 500);
-    setTimeout(function(){
-      $('#playLink').css({'display': 'none'});
-      $('#teasermp4').css({'display': 'none'});
-      $('#showreelVimeo').css({'display': 'block'});
-    }, 500);
-    setTimeout(function(){
-      var jqueryPlayer = new Vimeo.Player($('#showreelVimeo'));
-      jqueryPlayer.play()
-    }, 500);
-    $('#showreelVimeo').velocity({'opacity': ['1', '0']}, 1000);
-  };
-
-  $('.introRow').each(function(i) {
-      $(this).delay(500*i).velocity({'opacity': '1', 'top': 0 + 'px'}, 1000);
-  });
-
-  setTimeout(function(){
-    $('#showreel').delay(500).velocity({'opacity': '1'}, 1000);
-    $('#showreelText').delay(1000).velocity({'opacity': '1', 'top': 0 + 'px'}, 1000);
-    $('#worksChead').delay(1500).velocity({'opacity': '1'}, 1000);
-    $('.workCatClass').each(function(i) {
-        $(this).delay(250*i).velocity({'opacity': '1'}, 1000);
-    });
-    $('.works-li').delay(2250).each(function(i) {
-        $(this).delay(500*i).velocity({'opacity': '1'}, 1000);
-    });
-    $('.outro').delay(2750).velocity({'opacity': '1', 'top': 0 + 'px'}, 1000);
-  }, 4000);
-
-  // $('.works-ul').velocity({'margin-left': -1 * $scope.numberofworks + 'px'}, 15000);
-
 });

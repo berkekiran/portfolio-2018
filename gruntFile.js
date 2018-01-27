@@ -42,7 +42,7 @@ module.exports = function(grunt) {
       options: {
         sourceMap: true
       },
-      dist: {
+      target: {
       files: {
         'css/portfolio.css': 'css/portfolio.sass'
         }
@@ -65,7 +65,6 @@ module.exports = function(grunt) {
       },
       scripts: {
         files: ['js/*.js'],
-        tasks: ['jshint'],
       options: {
       spawn: false,
       },

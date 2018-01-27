@@ -29,54 +29,44 @@
   </head>
 
   <body ng-controller="portfolioController">
-    <section class="wrapper">
 
-      <section class="intro">
-        <p class="welcomeText">
-          <span class="introRow">Hi, I am <span id="logo">Berke Kiran</span>(21). I am a self-taught 3d <br></span>
-          <span class="introRow">character artist and front-end developer from<br></span>
-          <span class="introRow">canakkale, turkey. I am specialized in creating <br></span>
-          <span class="introRow">3d characters for cinematics, feature film and <br></span>
-          <span class="introRow">games. I love to create dynamic, responsive <br></span>
-          <span class="introRow">websites & apps.<br><br></span>
-          <span class="introRow">If you have a project you'd like to discuss, <br></span>
-          <span class="introRow">feel free to <a href="mailto:berkekiranofficial@hotmail.com?Subject=Hi Berke!">reach out</a>.</span>
-        </p>
-        <div id="showreel">
-          <iframe id="showreelVimeo" src="https://player.vimeo.com/video/244029667" width="1200" height="675" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          <div id="playLink" ng-click="playShowreel()">
-            <div id="playButton"></div>
-          </div>
-          <video autoplay muted loop id="teasermp4">
-            <source src="../images/teaser.mp4" type="video/mp4">
-          </video>
-        </div>
-        <span id="showreelText">© 2017 Showreel, Berke Kiran <a target="_blank" href="https://vimeo.com/244029667">Vimeo</a></span><br>
-      </section>
+    <div class="ui">
+      <div id="menuButton">M</div>
+    </div>
 
-      <section class="works">
-        <span id="worksChead">Categories</span><br>
-        <ul id="worksCselect">
-          <li class="workCatClass" ng-repeat="workCategory in worksCategories" ng-click="setFilterCategory(workCategory.Category)">
-            {{workCategory.Category}}<br>
-          </li>
-        </ul>
-        <ul class="works-ul">
-          <li class="works-li" ng-repeat="work in works | filter: filterByCategory  as filtered">
-            <a target="_blank" class ng-href="{{work.Link}}"></a>
-            <span class="worksName">{{work.ProjectName}}</span><br>
-            <span class="worksCY">
-              <span class="worksCategory">{{work.Category}}</span>, <span class="worksYear">{{work.Year}}</span>
-            </span>
-            <div ng-style="{{work.Image}}" class="worksImg"></div>
-          </li>
-        </ul>
-      </section>
+    <section class="intro">
+      <div id="teaser">
+        <video autoplay muted loop>
+          <source src="../images/teaser.mp4" poster="../images/teaser.png" type="video/mp4">
+        </video>
+      </div>
+      <div id="scrollDown"></div>
+    </section>
 
-      <section class="outro">
-          <span>© 2018 Berke Kiran</span>
-      </section>
-
+    <section class="aboutMe">
+      <div id="showreel">
+        <video autoplay muted loop>
+          <source src="../images/showreel.mp4" type="video/mp4">
+        </video>
+      </div>
+      <br>
+      <p id="about">
+        <span>Hello!</span> I’m <span>Berke Kiran</span> a self-taught <span>3D Character Artist</span><br>
+        and <span>Front-End Developer</span>. I am specialized in creating <span>3D<br>
+        characters</span> for <span>cinematics</span>, <span>feature film</span>, and <span>games</span>. I love<br>
+        <span>art</span>, <span>science</span>, <span>coding</span>, <span>learning new technologies</span> & <span>improving<br>
+        myself</span>. I was <span>born</span> and <span>grew</span> in <span>Turkey</span>. So I can speak <span>Turkish</span>,<br>
+        <span>English</span> and little bit <span>German</span>. I started to learning <span>game<br>
+        creation</span> at <span>13</span> years old. Now I am living to <span>learn and create</span><br>
+        something new <span>every day</span>. I graduated high school in <span>2015</span><br>
+        with a class rank of <span>second</span> Out of <span>724</span> graduates. Then I<br>
+        honored with <span>Outstanding Achievement Certificate</span> & now<br>
+        going to <span>KB.University</span> in Karabuk. I'm learning <span>computer<br>
+        engineering</span>.<br><br>
+        If <span>you</span> have a <span>project</span> you'd like to <span>discuss</span>,<br>
+        <span>feel free</span> to <a href="mailto:berkekiranofficial@hotmail.com?Subject=Hi Berke!">reach out.</a><br><br><br>
+        <span id="explore">Explore my Art</span>
+      </p>
     </section>
 
   </body>

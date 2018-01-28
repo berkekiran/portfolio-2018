@@ -6,7 +6,7 @@ app.controller('portfolioController', function($scope) {
                   {
                     ProjectName: "B21 Gameplay",
                     Category: "Video",
-                    CategoryAlt: "Videos",
+                    CategoryAlt: "Other Works",
                     Year: "2018",
                     Link: "https://vimeo.com/249373398",
                     Image: {"background-image" : "url('https://i.vimeocdn.com/video/675169794_640x1138.jpg')"},
@@ -15,7 +15,7 @@ app.controller('portfolioController', function($scope) {
                   {
                     ProjectName: "B21",
                     Category: "Android Game",
-                    CategoryAlt: "Games",
+                    CategoryAlt: "Other Works",
                     Year: "2018",
                     Link: "https://play.google.com/store/apps/details?id=com.berkekiran.b21",
                     Image: {"background-image" :  "url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/28ad7c60331263.5a47c71711730.png')"},
@@ -23,7 +23,7 @@ app.controller('portfolioController', function($scope) {
                   },
                   { ProjectName: "B21 Soundtrack",
                     Category: "Soundtrack",
-                    CategoryAlt: "Soundtracks",
+                    CategoryAlt: "Other Works",
                     Year: '2018',
                     Link: 'https://soundcloud.com/berkekiran/b21-soundtrack',
                     Image: {"background-image" :  "url('https://i1.sndcdn.com/artworks-000273726992-0cts00-t500x500.jpg')"},
@@ -31,7 +31,7 @@ app.controller('portfolioController', function($scope) {
                   },
                   { ProjectName: "Showreel 2017 (2nd)",
                     Category: "Video",
-                    CategoryAlt: "Videos",
+                    CategoryAlt: "Other Works",
                     Year: "2017",
                     Link: "https://vimeo.com/244029667",
                     Image: {"background-image" :  "url('https://i.vimeocdn.com/video/668343327_640x360.jpg')"}
@@ -52,28 +52,28 @@ app.controller('portfolioController', function($scope) {
   								},
                   { ProjectName: 'Portfolio 2017 / Behance',
                     Category: "Video",
-                    CategoryAlt: "Videos",
+                    CategoryAlt: "Other Works",
                     Year: '2017',
                     Link: "https://vimeo.com/229985411",
                     Image: {"background-image" : " url('https://i.vimeocdn.com/video/650439777_640x427.jpg')"}
                   },
                   { ProjectName: 'Portfolio 2017',
                     Category: "Website",
-                    CategoryAlt: "Websites",
+                    CategoryAlt: 'Websites',
                     Year: '2017',
                     Link: "https://www.behance.net/gallery/55844571/Portfolio-2017",
                     Image: {"background-image" : " url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/f0f0d755844571.59957ded498a7.png')"}
                   },
                   { ProjectName: "Showreel 2017",
                     Category: "Video",
-                    CategoryAlt: "Videos",
+                    CategoryAlt: "Other Works",
                     Year: "2017",
                     Link: "https://vimeo.com/229903690",
                     Image: {"background-image" :  "url('https://i.vimeocdn.com/video/650340447_640x360.jpg')"}
                   },
                   { ProjectName: "Orc Leader Teaser",
                     Category: "Video",
-                    CategoryAlt: "Videos",
+                    CategoryAlt: "Other Works",
                     Year: "2017",
                     Link: "https://vimeo.com/229586787",
                     Image: {"background-image" :  "url('https://i.vimeocdn.com/video/649934229_640x360.jpg')"}
@@ -87,28 +87,28 @@ app.controller('portfolioController', function($scope) {
                   },
                   { ProjectName: "Berke Kiran's Sketchbook",
                     Category: "Sketchbook",
-                    CategoryAlt: "Sketchbooks",
+                    CategoryAlt: "Other Works",
                     Year: '2017',
                     Link: 'https://www.artstation.com/artwork/0gXRK',
                     Image: {"background-image" :  "url('https://cdna.artstation.com/p/assets/images/images/007/018/816/large/berke-kiran-sketchbook-cover.jpg?1510924795')"}
                   },
                   { ProjectName: "Berke Kiran - noMore",
                     Category: "Soundtrack",
-                    CategoryAlt: "Soundtracks",
+                    CategoryAlt: "Other Works",
                     Year: '2017',
                     Link: 'https://soundcloud.com/berkekiran/berkekiran-nomore',
                     Image: {"background-image" :  "url('https://i1.sndcdn.com/artworks-000243745966-iqom95-t500x500.jpg')"}
                   },
-                  { ProjectName: "2d Police Characters",
+                  { ProjectName: "2d Police Sprites",
   									Category: "Sprite",
-                    CategoryAlt: "Other Projects",
+                    CategoryAlt: "Other Works",
   									Year: '2017',
   									Link: 'https://www.piskelapp.com/user/6579624730427392',
   									Image: {"background-image" :  "url('https://www.piskelapp.com/img/agxzfnBpc2tlbC1hcHByFwsSCkZyYW1lc2hlZXQYgIDA1vy4nggM/preview')"}
   								},
                   { ProjectName: "Berke Kiran - Truth",
   									Category: "Soundtrack",
-                    CategoryAlt: "Soundtracks",
+                    CategoryAlt: "Other Works",
   									Year: '2017',
   									Link: 'https://soundcloud.com/berkekiran/berkekiran-truth',
   									Image: {"background-image" :  "url('https://i1.sndcdn.com/artworks-000191727884-jhw42q-t500x500.jpg')"}
@@ -150,7 +150,7 @@ app.controller('portfolioController', function($scope) {
                   },
                   { ProjectName: "Berke Kiran - Death",
                     Category: "Soundtrack",
-                    CategoryAlt: "Soundtracks",
+                    CategoryAlt: "Other Works",
                     Year: '2016',
                     Link: 'https://soundcloud.com/berkekiran/berkekiran-death',
                     Image: {"background-image" :  "url('https://i1.sndcdn.com/artworks-000234595360-df8qty-t500x500.jpg')"}
@@ -164,21 +164,21 @@ app.controller('portfolioController', function($scope) {
                   },
                   { ProjectName: "UE4 Snowy Road",
                     Category: "UE4 Project",
-                    CategoryAlt: "Other Projects",
+                    CategoryAlt: "Other Works",
                     Year: '2015',
                     Link: 'https://www.artstation.com/artwork/ONdgg',
                     Image: {"background-image" :  "url('https://cdna.artstation.com/p/assets/images/images/006/805/710/large/berke-kiran-snowyroad1.jpg?1510924858')"}
                   },
                   { ProjectName: "UE4 Snow System v2",
   									Category: "UE4 Project",
-                    CategoryAlt: "Other Projects",
+                    CategoryAlt: "Other Works",
   									Year: '2015',
   									Link: 'https://github.com/berkekiran/ue4-snow-system-v2',
   									Image: {"background-image" :  "url('https://answers.unrealengine.com/storage/temp/64914-ue_tablet_mat.jpg')"}
   								},
                   { ProjectName: "UE4 Snow System v1",
   									Category: "UE4 Project",
-                    CategoryAlt: "Other Projects",
+                    CategoryAlt: "Other Works",
   									Year: '2015',
   									Link: 'https://github.com/berkekiran/ue4-snow-system-v1',
   									Image: {"background-image" :  "url('https://answers.unrealengine.com/storage/temp/64914-ue_tablet_mat.jpg')"}
@@ -213,49 +213,49 @@ app.controller('portfolioController', function($scope) {
                   },
                   { ProjectName: "Adam Noise - Soundtrack v3",
                     Category: "Soundtrack",
-                    CategoryAlt: "Soundtracks",
+                    CategoryAlt: "Other Works",
                     Year: '2015',
                     Link: 'https://soundcloud.com/berkekiran/adam-noise-soundtrack-v3',
                     Image: {"background-image" :  "url('https://i1.sndcdn.com/artworks-000234595502-vf8uni-t500x500.jpg')"}
                   },
                   { ProjectName: "Adam Noise - Soundtrack v2",
                     Category: "Video",
-                    CategoryAlt: "Videos",
+                    CategoryAlt: "Other Works",
                     Year: '2015',
                     Link: 'https://vimeo.com/226498391',
                     Image: {"background-image" :  "url('https://i.vimeocdn.com/video/646124825_640x360.jpg')"}
                   },
                   { ProjectName: "Adam Noise - Soundtrack v2",
   									Category: "Soundtrack",
-                    CategoryAlt: "Soundtracks",
-  									Year: '2015',
+                    CategoryAlt: "Other Works",
+					          Year: '2015',
   									Link: 'https://soundcloud.com/berkekiran/adam-noise-soundtrack-v2',
   									Image: {"background-image" :  "url('https://i1.sndcdn.com/artworks-000234595592-c33567-t500x500.jpg')"}
   								},
                   { ProjectName: "Adam Noise - Soundtrack v1",
   									Category: "Video",
-                    CategoryAlt: "Videos",
+                    CategoryAlt: "Other Works",
   									Year: '2015',
   									Link: 'https://vimeo.com/226498485',
   									Image: {"background-image" :  "url('https://i.vimeocdn.com/video/646125632_640x360.jpg')"}
   								},
                   { ProjectName: "Adam Noise - Soundtrack v1",
   									Category: "Soundtrack",
-                    CategoryAlt: "Soundtracks",
+                    CategoryAlt: "Other Works",
   									Year: '2015',
   									Link: 'https://soundcloud.com/berkekiran/adam-noise-soundtrack-v1',
   									Image: {"background-image" :  "url('https://i1.sndcdn.com/artworks-000234595719-1nqrkm-t500x500.jpg')"}
   								},
                   { ProjectName: "Metal Dragon - Video",
   									Category: "Video",
-                    CategoryAlt: "Videos",
+                    CategoryAlt: "Other Works",
   									Year: '2015',
   									Link: 'https://vimeo.com/226496501',
   									Image: {"background-image" :  "url('https://i.vimeocdn.com/video/646122388_640x360.jpg')"}
   								},
                   { ProjectName: 'Portfolio 2015 / Behance',
                     Category: "Video",
-                    CategoryAlt: "Videos",
+                    CategoryAlt: "Other Works",
                     Year: '2015',
                     Link: "https://vimeo.com/229559858",
                     Image: {"background-image" : " url('https://i.vimeocdn.com/video/649900528_640x427.jpg')"}
@@ -276,21 +276,29 @@ app.controller('portfolioController', function($scope) {
                   },
                   { ProjectName: 'Quick Write',
                     Category: "Silverlight Project",
-                    CategoryAlt: "Other Projects",
+                    CategoryAlt: "Other Works",
                     Year: '2013',
                     Link: "https://www.behance.net/gallery/55736987/Quick-Write",
                     Image: {"background-image" : " url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/1ddf4855736987.599178c3362b3.png')"}
                   }
                  ];
 
-  $scope.worksCategories = [
-                            { Category: "All"},
-                            { Category: "Characters"},
-                            { Category: "Websites"},
-                            { Category: "Games"},
-                            { Category: "Videos"},
-                            { Category: "Soundtracks"},
-                            { Category: "Sketchbooks"},
-                            { Category: "Other Projects"}
-                           ];
+   $('.charactersUl').css('width', ($scope.works.CategoryAlt = 'Characters').length * 20 + 'vw');
+
+   var move = 0;
+
+   $scope.characterNaviPrevClick = function(){
+     move += 40;
+     if(move >= 6) move = 6;
+
+     $('.characterUl').velocity({'margin-left': move + 'vw'}, 1000);
+   };
+
+   $scope.characterNaviNextClick = function(){
+     move -= 40;
+     if(move <= -44) move = -44;
+
+     $('.characterUl').velocity({'margin-left': move + 'vw'}, 1000);
+   };
+
 });

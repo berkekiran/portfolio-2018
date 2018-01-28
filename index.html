@@ -69,6 +69,39 @@
       </p>
     </section>
 
+    <section class="recentWorks">
+      <h1>Recent Works</h1>
+      <h4>These are my <span>recent works</span>. If you want to <span>see more</span>, just <span>scroll down</span>.</h4>
+      <div class="recentWorksLinksDiv">
+        <a target="_blank" ng-href="{{lastcharacter.Link}}" ng-style="{{lastcharacter.Image}}" class="recentWorksLinks" ng-repeat="lastcharacter in works | filter: lastcharacter.ProjectName = 'Boromir' ">
+          <span class="recentWorksLinksPName">{{lastcharacter.ProjectName}}</span><br>
+          <span class="recentWorksLinksCY">{{lastcharacter.Category}}, {{lastcharacter.Year}}</span>
+        </a>
+        <a target="_blank" ng-href="{{lastwebsite.Link}}" ng-style="{{lastwebsite.Image}}" class="recentWorksLinks" ng-repeat="lastwebsite in works | filter: lastwebsite.ProjectName = 'Portfolio 2017 v2' ">
+          <span class="recentWorksLinksPName">{{lastwebsite.ProjectName}}</span><br>
+          <span class="recentWorksLinksCY">{{lastwebsite.Category}}, {{lastwebsite.Year}}</span>
+        </a>
+        <a target="_blank" ng-href="{{lastotherwork.Link}}" ng-style="{{lastotherwork.Image}}" class="recentWorksLinks" ng-repeat="lastotherwork in works | filter: lastotherwork.ProjectName = 'B21 Gameplay' ">
+          <span class="recentWorksLinksPName">{{lastotherwork.ProjectName}}</span><br>
+          <span class="recentWorksLinksCY">{{lastotherwork.Category}}, {{lastotherwork.Year}}</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="characters">
+      <div class="charactersNavi">
+        <span ng-click="characterNaviPrevClick()" class="characterNaviPrev">prev</span>
+        <span ng-click="characterNaviNextClick()" class="characterNaviNext">next</span>
+      </div>
+      <ul class="characterUl">
+        <li class="characterLi" ng-style="{{character.Image}}" ng-repeat="character in works | filter: character.CategoryAlt = 'Characters'">
+          <span class="characterLiName">{{character.ProjectName}}</span><br>
+          <span class="characterLiCY">{{character.Category}}, {{character.Year}}</span><br>
+          <a target="_blank" ng-href="{{character.Link}}" class="characterLiButton">View Character</a>
+        </li>
+      </ul>
+    </section>
+
   </body>
 
 </html>

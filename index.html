@@ -115,6 +115,24 @@
       </ul>
     </section>
 
+    <section class="otherWorks">
+      <h1>Other Works</h1>
+      <ul class="otherWorkUl">
+        <li class="otherWorkLi" ng-repeat="otherWork in works | filter: otherWork.CategoryAlt = 'Other Works'">
+          <a target="_blank" ng-href="{{otherWork.Link}}" class="otherWorkLiButton">
+            <div ng-style="{{otherWork.Image}}" class="otherWorkLiImage"></div>
+            <span class="otherWorkLiName">{{otherWork.ProjectName}}</span><br>
+            <span class="otherWorkLiCY">{{otherWork.Category}}, {{otherWork.Year}}</span><br>
+            <div class="otherWorkLiGoImage"></div>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="outro">
+      
+    </section>
+
   </body>
 
 </html>

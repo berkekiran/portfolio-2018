@@ -102,6 +102,17 @@
       </ul>
     </section>
 
+    <section class="websites">
+      <ul class="websiteUl">
+        <li ng-style="{{website.Image}}" class="websiteLi" ng-repeat="website in works | filter: website.CategoryAlt = 'Websites'">
+          <div ng-style="{{website.Logo}}" class="websiteLiLogo"></div>
+          <span class="websiteLiName">{{website.ProjectName}}</span><br>
+          <span class="websiteLiCY">{{website.Category}}, {{website.Year}}</span><br>
+          <a target="_blank" ng-href="{{website.Link}}" class="websiteLiButton">View Website</a>
+        </li>
+      </ul>
+    </section>
+
   </body>
 
 </html>

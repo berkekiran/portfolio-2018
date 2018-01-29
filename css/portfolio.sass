@@ -327,7 +327,7 @@ html, body
     display: inline-block
     list-style: none
     padding: 0
-    width: 200vw
+    width: 100vw
 
     .characterLi
       float: left
@@ -362,6 +362,87 @@ html, body
         position: relative
         top: 78%
         left: 12%
+        font-family: 'open_sansbold', sans-serif
+        width: auto
+        height: auto
+        padding-left: 72px
+        padding-right: 72px
+        padding-top: 14px
+        padding-bottom: 14px
+        background: #C21C82
+        background: -webkit-linear-gradient(to right, #FF6B6B, #C21C82)
+        background: linear-gradient(to right, #FF6B6B, #C21C82)
+        border-radius: 36px
+        font-size: 14px
+        text-transform: uppercase
+        color: #FFFFFF
+        line-height: 26px
+        letter-spacing: 1.4px
+        transition: all 0.3s
+
+        &:hover
+          cursor: pointer
+          opacity: 0.3
+
+.websites
+  position: relative
+  display: block
+  height: 100vh
+  width: 100vw
+  overflow: scroll
+  overflow-x: hidden
+
+  .websiteUl
+    position: relative
+    display: block
+    padding: 0
+    list-style: none
+    top: 12vh
+    left: 9vw
+
+    .websiteLi
+      display: block
+      height: 22vh
+      width: 80vw
+      margin-bottom: 2vh
+      border-radius: 2vh
+      background-size: cover
+
+      .websiteLiLogo
+        z-index: 1
+        position: relative
+        float: left
+        border-radius: 3%
+        margin-top: 3vh
+        margin-left: 3vw
+        height: 8vw
+        width: 8vw
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+
+      .websiteLiName
+        position: relative
+        margin-left: 2vw
+        top: 7vh
+        font-size: 24px
+        font-family: 'open_sansbold', sans-serif
+        color: #FFFFFF
+
+      .websiteLiCY
+        position: relative
+        margin-left: 2vw
+        top: 8vh
+        font-size: 18px
+        font-family: 'open_sansbold', sans-serif
+        color: #E91E63
+
+      .websiteLiButton
+        text-decoration: none
+        float: right
+        margin-top: 2vh
+        margin-right: 3vw
+        position: relative
         font-family: 'open_sansbold', sans-serif
         width: auto
         height: auto

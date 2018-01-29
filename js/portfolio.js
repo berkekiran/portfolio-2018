@@ -47,8 +47,9 @@ app.controller('portfolioController', function($scope) {
   									Category: "Website",
                     CategoryAlt: "Websites",
                     Year: '2017',
+                    Logo: {"background-image" : " url('../images/websites/portfolio-2017-v2.png')"},
                     Link: "https://www.behance.net/gallery/56636523/Portfolio-2017-v2",
-                    Image: {"background-image" : " url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/c69f2456636523.59b6d5ef3be53.png')"}
+                    Image: {"background" : " linear-gradient(to left, #0A1612 0%, #0A1612 25%, transparent 35%, transparent 50%, transparent 65%, #0A1612 75%, #0A1612 100%), url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/c69f2456636523.59b6d5ef3be53.png') no-repeat center -35vh"}
   								},
                   { ProjectName: 'Portfolio 2017 / Behance',
                     Category: "Video",
@@ -61,8 +62,9 @@ app.controller('portfolioController', function($scope) {
                     Category: "Website",
                     CategoryAlt: 'Websites',
                     Year: '2017',
+                    Logo: {"background-image" : " url('../images/websites/portfolio-2017.png')"},
                     Link: "https://www.behance.net/gallery/55844571/Portfolio-2017",
-                    Image: {"background-image" : " url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/f0f0d755844571.59957ded498a7.png')"}
+                    Image: {"background" : " linear-gradient(to left, #0A1612 0%, #0A1612 25%, transparent 35%, transparent 50%, transparent 65%, #0A1612 75%, #0A1612 100%), url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/f0f0d755844571.59957ded498a7.png') no-repeat center -35vh"}
                   },
                   { ProjectName: "Showreel 2017",
                     Category: "Video",
@@ -117,8 +119,9 @@ app.controller('portfolioController', function($scope) {
                     Category: "Website",
                     CategoryAlt: "Websites",
                     Year: '2016',
+                    Logo: {"background-image" : " url('../images/websites/portfolio-2016-v2.png')"},
                     Link: "https://www.behance.net/gallery/55791649/Portfolio-2016-v2",
-                    Image: {"background-image" : " url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/cdc09055791649.5993654db84a4.png')"}
+                    Image: {"background" : " linear-gradient(to left, #0A1612 0%, #0A1612 25%, transparent 35%, transparent 50%, transparent 65%, #0A1612 75%, #0A1612 100%), url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/cdc09055791649.5993654db84a4.png') no-repeat center -35vh"}
                   },
                   { ProjectName: "Sleeping Creature",
                     Category: "3D Creature",
@@ -138,15 +141,17 @@ app.controller('portfolioController', function($scope) {
                     Category: "Website",
                     CategoryAlt: "Websites",
                     Year: '2016',
+                    Logo: {"background-image" : " url('../images/websites/video-games-center-station.png')"},
                     Link: "https://www.behance.net/gallery/55790661/Video-Games-Center-Station",
-                    Image: {"background-image" : " url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/04aa1355790661.59935d185a7dd.png')"}
+                    Image: {"background" : " linear-gradient(to left, #0A1612 0%, #0A1612 25%, transparent 35%, transparent 50%, transparent 65%, #0A1612 75%, #0A1612 100%), url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/04aa1355790661.59935d185a7dd.png') no-repeat center -35vh"}
                   },
                   { ProjectName: 'Portfolio 2016',
                     Category: "Website",
                     CategoryAlt: "Websites",
                     Year: '2016',
+                    Logo: {"background-image" : " url('../images/websites/portfolio-2016.png')"},
                     Link: 'https://www.behance.net/gallery/55771277/Portfolio-2016',
-                    Image: {"background-image" : " url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/1bc49055771277.5992c282f15f0.png')"}
+                    Image: {"background" : " linear-gradient(to left, #0A1612 0%, #0A1612 25%, transparent 35%, transparent 50%, transparent 65%, #0A1612 75%, #0A1612 100%), url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/1bc49055771277.5992c282f15f0.png') no-repeat center -35vh"}
                   },
                   { ProjectName: "Berke Kiran - Death",
                     Category: "Soundtrack",
@@ -187,29 +192,33 @@ app.controller('portfolioController', function($scope) {
                     Category: "Website",
                     CategoryAlt: "Websites",
                     Year: '2015',
+                    Logo: {"background-image" : " url('../images/websites/portfolio-2015-v5.png')"},
                     Link: 'https://www.behance.net/gallery/55754747/Portfolio-2015-v5',
-                    Image: {"background-image" : " url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/aef4b955754747.599203545286e.png')"}
+                    Image: {"background" : " linear-gradient(to left, #0A1612 0%, #0A1612 25%, transparent 35%, transparent 50%, transparent 65%, #0A1612 75%, #0A1612 100%), url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/aef4b955754747.599203545286e.png') no-repeat center -35vh"}
                   },
                   { ProjectName: 'Portfolio 2015 v4',
                     Category: "Website",
                     CategoryAlt: "Websites",
                     Year: '2015',
+                    Logo: {"background-image" : " url('../images/websites/portfolio-2015-v4.png')"},
                     Link: "https://www.behance.net/gallery/55752371/Portfolio-2015-v4",
-                    Image: {"background-image" : " url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/a916da55752371.5991fd8e882e8.png')"}
+                    Image: {"background" : " linear-gradient(to left, #0A1612 0%, #0A1612 25%, transparent 35%, transparent 50%, transparent 65%, #0A1612 75%, #0A1612 100%), url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/a916da55752371.5991fd8e882e8.png') no-repeat center -35vh"}
                   },
                   { ProjectName: 'Portfolio 2015 v3',
                     Category: "Website",
                     CategoryAlt: "Websites",
                     Year: '2015',
+                    Logo: {"background-image" : " url('../images/websites/portfolio-2015-v3-design.png')"},
                     Link: "https://www.behance.net/gallery/55748605/Portfolio-2015-v3-Design",
-                    Image: {"background-image" : " url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/28699b55748605.5991d45a2220b.png')"}
+                    Image: {"background" : " linear-gradient(to left, #0A1612 0%, #0A1612 25%, transparent 35%, transparent 50%, transparent 65%, #0A1612 75%, #0A1612 100%), url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/28699b55748605.5991d45a2220b.png') no-repeat center -52vh"}
                   },
                   { ProjectName: 'Portfolio 2015 v2',
                     Category: "Website",
                     CategoryAlt: "Websites",
                     Year: '2015',
+                    Logo: {"background-image" : " url('../images/websites/portfolio-2015-v2-design.png')"},
                     Link: "https://www.behance.net/gallery/55747869/Portfolio-2015-v2-Design",
-                    Image: {"background-image" : " url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/cfa60955747869.5991cdd8f2575.png')"}
+                    Image: {"background" : " linear-gradient(to left, #0A1612 0%, #0A1612 25%, transparent 35%, transparent 50%, transparent 65%, #0A1612 75%, #0A1612 100%), url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/cfa60955747869.5991cdd8f2575.png') no-repeat center -35vh"}
                   },
                   { ProjectName: "Adam Noise - Soundtrack v3",
                     Category: "Soundtrack",
@@ -264,15 +273,17 @@ app.controller('portfolioController', function($scope) {
                     Category: "Website",
                     CategoryAlt: "Websites",
                     Year: '2015',
+                    Logo: {"background-image" : " url('../images/websites/portfolio-2015.png')"},
                     Link: "https://www.behance.net/gallery/55742749/Portfolio-2015",
-                    Image: {"background-image" : " url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/54beff55742749.5991a4c36df38.png')"}
+                    Image: {"background" : " linear-gradient(to left, #0A1612 0%, #0A1612 25%, transparent 35%, transparent 50%, transparent 65%, #0A1612 75%, #0A1612 100%), url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/54beff55742749.5991a4c36df38.png') no-repeat center -35vh"}
                   },
                   { ProjectName: 'Photo Galleries',
                     Category: "Website",
                     CategoryAlt: "Websites",
                     Year: '2014',
+                    Logo: {"background-image" : " url('../images/websites/photo-galleries.png')"},
                     Link: "https://www.behance.net/gallery/55738571/Photo-Galleries",
-                    Image: {"background-image" : " url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/085b1c55738571.59917f5560ae0.png')"}
+                    Image: {"background" : " linear-gradient(to left, #0A1612 0%, #0A1612 25%, transparent 35%, transparent 50%, transparent 65%, #0A1612 75%, #0A1612 100%), url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/085b1c55738571.59917f5560ae0.png') no-repeat center -35vh"}
                   },
                   { ProjectName: 'Quick Write',
                     Category: "Silverlight Project",
@@ -283,7 +294,7 @@ app.controller('portfolioController', function($scope) {
                   }
                  ];
 
-   $('.charactersUl').css('width', ($scope.works.CategoryAlt = 'Characters').length * 20 + 'vw');
+   $('.characterUl').css('width', (($scope.works.CategoryAlt = 'Characters').length-3) * 20 + 'vw');
 
    var move = 0;
 

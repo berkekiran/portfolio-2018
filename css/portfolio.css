@@ -299,7 +299,7 @@ html, body {
     display: inline-block;
     list-style: none;
     padding: 0;
-    width: 200vw; }
+    width: 100vw; }
     .characters .characterUl .characterLi {
       float: left;
       height: 66vh;
@@ -348,6 +348,80 @@ html, body {
         letter-spacing: 1.4px;
         transition: all 0.3s; }
         .characters .characterUl .characterLi .characterLiButton:hover {
+          cursor: pointer;
+          opacity: 0.3; }
+
+.websites {
+  position: relative;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+  overflow-x: hidden; }
+  .websites .websiteUl {
+    position: relative;
+    display: block;
+    padding: 0;
+    list-style: none;
+    top: 12vh;
+    left: 9vw; }
+    .websites .websiteUl .websiteLi {
+      display: block;
+      height: 22vh;
+      width: 80vw;
+      margin-bottom: 2vh;
+      border-radius: 2vh;
+      background-size: cover; }
+      .websites .websiteUl .websiteLi .websiteLiLogo {
+        z-index: 1;
+        position: relative;
+        float: left;
+        border-radius: 3%;
+        margin-top: 3vh;
+        margin-left: 3vw;
+        height: 8vw;
+        width: 8vw;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; }
+      .websites .websiteUl .websiteLi .websiteLiName {
+        position: relative;
+        margin-left: 2vw;
+        top: 7vh;
+        font-size: 24px;
+        font-family: 'open_sansbold', sans-serif;
+        color: #FFFFFF; }
+      .websites .websiteUl .websiteLi .websiteLiCY {
+        position: relative;
+        margin-left: 2vw;
+        top: 8vh;
+        font-size: 18px;
+        font-family: 'open_sansbold', sans-serif;
+        color: #E91E63; }
+      .websites .websiteUl .websiteLi .websiteLiButton {
+        text-decoration: none;
+        float: right;
+        margin-top: 2vh;
+        margin-right: 3vw;
+        position: relative;
+        font-family: 'open_sansbold', sans-serif;
+        width: auto;
+        height: auto;
+        padding-left: 72px;
+        padding-right: 72px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        background: #C21C82;
+        background: -webkit-linear-gradient(to right, #FF6B6B, #C21C82);
+        background: linear-gradient(to right, #FF6B6B, #C21C82);
+        border-radius: 36px;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        line-height: 26px;
+        letter-spacing: 1.4px;
+        transition: all 0.3s; }
+        .websites .websiteUl .websiteLi .websiteLiButton:hover {
           cursor: pointer;
           opacity: 0.3; }
 

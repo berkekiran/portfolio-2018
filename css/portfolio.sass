@@ -571,6 +571,61 @@ html, body
   width: 100vw
   overflow: hidden
 
+  .social
+    display: inline-block
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    top: 32vh
+
+    a
+      position: relative
+      background: #D31027
+      background: -webkit-linear-gradient(to right, #EA384D, #D31027)
+      background: linear-gradient(to right, #EA384D, #D31027)
+      height: 8vw
+      width: 8vw
+      display: inline-block
+      margin-right: 2vw
+      margin-bottom: 2vw
+      text-decoration: none
+      border-radius: 1vw
+      transition: all 0.3s
+
+      &:hover
+        animation: exploreAnim 0.6s
+        cursor: pointer
+
+      img
+        position: relative
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        height: 2vw
+        width: 2vw
+
+  .thankyou
+    display: inline-block
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    width: 16.4vw
+    font-size: 44px
+    font-family: 'open_sansextrabold', sans-serif
+    color: #E91E63
+    top: 12vh
+
+  .copyright
+    display: inline-block
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    width: 11.2vw
+    font-size: 18px
+    font-family: 'open_sansbold', sans-serif
+    color: #FFFFFF
+    bottom: 10vh
+
 @keyframes exploreAnim
   0%
     transform: scale(1)

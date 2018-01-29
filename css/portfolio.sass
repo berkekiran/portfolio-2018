@@ -264,6 +264,13 @@ html, body
   width: 100vw
   overflow: hidden
 
+  h1
+    position: absolute
+    left: -30vw
+    top: -2vh
+    font-size: 24px
+    font-family: 'open_sansbold', sans-serif
+
   .charactersNavi
     position: relative
     width: 20%
@@ -322,7 +329,7 @@ html, body
         cursor: pointer
 
   .characterUl
-    margin-top: 8%
+    margin-top: 7%
     margin-left: 6vw
     display: inline-block
     list-style: none
@@ -392,12 +399,19 @@ html, body
   overflow: scroll
   overflow-x: hidden
 
+  h1
+    position: relative
+    left: 12vw
+    top: 3.7%
+    font-size: 24px
+    font-family: 'open_sansbold', sans-serif
+
   .websiteUl
     position: relative
     display: block
     padding: 0
     list-style: none
-    top: 12vh
+    top: 14vh
     left: 9vw
 
     .websiteLi
@@ -463,7 +477,7 @@ html, body
 
         &:hover
           cursor: pointer
-          opacity: 0.3
+          animation: exploreAnim 0.6s
 
 @keyframes exploreAnim
   0%

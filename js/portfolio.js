@@ -49,6 +49,7 @@ app.controller('portfolioController', function($scope) {
                     Year: '2017',
                     Logo: {"background-image" : " url('../images/websites/portfolio-2017-v2.png')"},
                     Link: "https://www.behance.net/gallery/56636523/Portfolio-2017-v2",
+                    ImageRecentWorks: {"background-image" : " url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/c69f2456636523.59b6d5ef3be53.png')"},
                     Image: {"background" : " linear-gradient(to left, #0A1612 0%, #0A1612 25%, transparent 35%, transparent 50%, transparent 65%, #0A1612 75%, #0A1612 100%), url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/c69f2456636523.59b6d5ef3be53.png') no-repeat center -35vh"}
   								},
                   { ProjectName: 'Portfolio 2017 / Behance',
@@ -202,7 +203,7 @@ app.controller('portfolioController', function($scope) {
                     Year: '2015',
                     Logo: {"background-image" : " url('../images/websites/portfolio-2015-v4.png')"},
                     Link: "https://www.behance.net/gallery/55752371/Portfolio-2015-v4",
-                    Image: {"background" : " linear-gradient(to left, #0A1612 0%, #0A1612 25%, transparent 35%, transparent 50%, transparent 65%, #0A1612 75%, #0A1612 100%), url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/a916da55752371.5991fd8e882e8.png') no-repeat center -35vh"}
+                    Image: {"background" : " linear-gradient(to left, #0A1612 0%, #0A1612 25%, transparent 35%, transparent 50%, transparent 65%, #0A1612 75%, #0A1612 100%), url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/a916da55752371.5991fd8e882e8.png') no-repeat center -50vh"}
                   },
                   { ProjectName: 'Portfolio 2015 v3',
                     Category: "Website",

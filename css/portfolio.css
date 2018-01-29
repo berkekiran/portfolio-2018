@@ -241,6 +241,12 @@ html, body {
   height: 100vh;
   width: 100vw;
   overflow: hidden; }
+  .characters h1 {
+    position: absolute;
+    left: -30vw;
+    top: -2vh;
+    font-size: 24px;
+    font-family: 'open_sansbold', sans-serif; }
   .characters .charactersNavi {
     position: relative;
     width: 20%;
@@ -294,7 +300,7 @@ html, body {
         color: #0A1612;
         cursor: pointer; }
   .characters .characterUl {
-    margin-top: 8%;
+    margin-top: 7%;
     margin-left: 6vw;
     display: inline-block;
     list-style: none;
@@ -358,12 +364,18 @@ html, body {
   width: 100vw;
   overflow: scroll;
   overflow-x: hidden; }
+  .websites h1 {
+    position: relative;
+    left: 12vw;
+    top: 3.7%;
+    font-size: 24px;
+    font-family: 'open_sansbold', sans-serif; }
   .websites .websiteUl {
     position: relative;
     display: block;
     padding: 0;
     list-style: none;
-    top: 12vh;
+    top: 14vh;
     left: 9vw; }
     .websites .websiteUl .websiteLi {
       display: block;
@@ -423,7 +435,7 @@ html, body {
         transition: all 0.3s; }
         .websites .websiteUl .websiteLi .websiteLiButton:hover {
           cursor: pointer;
-          opacity: 0.3; }
+          animation: exploreAnim 0.6s; }
 
 @keyframes exploreAnim {
   0% {

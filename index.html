@@ -77,7 +77,7 @@
           <span class="recentWorksLinksPName">{{lastcharacter.ProjectName}}</span><br>
           <span class="recentWorksLinksCY">{{lastcharacter.Category}}, {{lastcharacter.Year}}</span>
         </a>
-        <a target="_blank" ng-href="{{lastwebsite.Link}}" ng-style="{{lastwebsite.Image}}" class="recentWorksLinks" ng-repeat="lastwebsite in works | filter: lastwebsite.ProjectName = 'Portfolio 2017 v2' ">
+        <a target="_blank" ng-href="{{lastwebsite.Link}}" ng-style="{{lastwebsite.ImageRecentWorks}}" class="recentWorksLinks" ng-repeat="lastwebsite in works | filter: lastwebsite.ProjectName = 'Portfolio 2017 v2' ">
           <span class="recentWorksLinksPName">{{lastwebsite.ProjectName}}</span><br>
           <span class="recentWorksLinksCY">{{lastwebsite.Category}}, {{lastwebsite.Year}}</span>
         </a>
@@ -90,6 +90,7 @@
 
     <section class="characters">
       <div class="charactersNavi">
+        <h1>Characters</h1>
         <span ng-click="characterNaviPrevClick()" class="characterNaviPrev">prev</span>
         <span ng-click="characterNaviNextClick()" class="characterNaviNext">next</span>
       </div>
@@ -103,6 +104,7 @@
     </section>
 
     <section class="websites">
+      <h1>Websites</h1>
       <ul class="websiteUl">
         <li ng-style="{{website.Image}}" class="websiteLi" ng-repeat="website in works | filter: website.CategoryAlt = 'Websites'">
           <div ng-style="{{website.Logo}}" class="websiteLiLogo"></div>

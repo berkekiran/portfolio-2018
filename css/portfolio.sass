@@ -1,14 +1,16 @@
 html, body
   margin: 0
   padding: 0
-  overflow-x: hidden
-  background: #0A1612
+  //background: #0A1612
   font-family: 'open_sansregular', sans-serif
   -webkit-font-smoothing: antialiased
   color: #FFFFFF
   white-space: nowrap
   width: 100vw
   height: auto
+  overflow-x: hidden
+  background: linear-gradient(90deg, #0A1612 (72px - 2px), transparent 1%) center, linear-gradient(#0A1612 (72px - 2px), transparent 1%) center, #242424
+  background-size: 72px 72px
 
 ::selection
   background: #E91E63
@@ -48,7 +50,14 @@ html, body
   z-index: 5
 
   #menuButton
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
     position: absolute
+    z-index: 3
     top: 56px
     right: 86px
     font-size: 24px
@@ -57,7 +66,46 @@ html, body
     transition: all 0.3s
 
     &:hover
+      opacity: 0.3
       cursor: pointer
+
+  #menu
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    display: block
+    z-index: 2
+    position: fixed
+    height: 100%
+    width: 100%
+    background: rgba(0,0,0, 0.666)
+    text-align: center
+
+    #menuWrapper
+      position: relative
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+
+      .menuButtons
+        -webkit-touch-callout: none
+        -webkit-user-select: none
+        -khtml-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
+        position: relative
+        text-align: center
+        font-size: 44px
+        font-family: 'open_sansbold', sans-serif
+        transition: all 0.3s
+
+        &:hover
+          color: #E91E63
+          cursor: pointer
 
 .intro
   position: relative
@@ -78,6 +126,11 @@ html, body
     overflow: hidden
     width: 66%
     height: 40%
+    transition: all 0.3s
+
+    &:hover
+      width: 74%
+      height: 48%
 
     video
       position: absolute
@@ -93,6 +146,12 @@ html, body
 	     transform: translate(-50%, -50%)
 
   #scrollDown
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
     position: absolute
     bottom: 56px
     left: 50%
@@ -102,8 +161,10 @@ html, body
     background: url('../images/mouse.png') no-repeat center center
     background-size: cover
     transition: all 0.3s
+    animation: scrollDownAnim 1.2s infinite
 
     &:hover
+      opacity: 0.3
       cursor: pointer
 
 .aboutMe
@@ -111,7 +172,8 @@ html, body
   display: block
   height: 100vh
   width: 100vw
-  overflow: hidden
+  overflow: scroll
+  overflow-x: hidden
 
   #showreel
     position: relative
@@ -173,6 +235,12 @@ html, body
       color: #F5F5F5
 
   #explore
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
     position: absolute
     width: auto
     height: auto
@@ -198,6 +266,12 @@ html, body
       animation: exploreAnim 0.6s
 
 .recentWorks
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
   position: relative
   display: block
   height: 100vh
@@ -205,12 +279,24 @@ html, body
   overflow: hidden
 
   h1
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
     margin-left: 16%
     margin-top: 6%
     font-size: 24px
     font-family: 'open_sansbold', sans-serif
 
   h4
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
     margin-left: 16%
     padding-bottom: 3%
     font-size: 18px
@@ -242,6 +328,12 @@ html, body
         transform: scale(1.06)
 
       .recentWorksLinksPName
+        -webkit-touch-callout: none
+        -webkit-user-select: none
+        -khtml-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
         position: relative
         top: 76%
         left: 12%
@@ -250,6 +342,12 @@ html, body
         color: #FFFFFF
 
       .recentWorksLinksCY
+        -webkit-touch-callout: none
+        -webkit-user-select: none
+        -khtml-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
         position: relative
         top: 78%
         left: 12%
@@ -263,8 +361,20 @@ html, body
   height: 100vh
   width: 100vw
   overflow: hidden
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
 
   h1
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
     position: absolute
     left: -30vw
     top: -2vh
@@ -280,6 +390,12 @@ html, body
     transform: translateX(-50%)
 
     .characterNaviPrev
+      -webkit-touch-callout: none
+      -webkit-user-select: none
+      -khtml-user-select: none
+      -moz-user-select: none
+      -ms-user-select: none
+      user-select: none
       text-decoration: none
       position: absolute
       font-family: 'open_sansbold', sans-serif
@@ -304,6 +420,12 @@ html, body
         cursor: pointer
 
     .characterNaviNext
+      -webkit-touch-callout: none
+      -webkit-user-select: none
+      -khtml-user-select: none
+      -moz-user-select: none
+      -ms-user-select: none
+      user-select: none
       text-decoration: none
       position: absolute
       font-family: 'open_sansbold', sans-serif
@@ -335,6 +457,13 @@ html, body
     list-style: none
     padding: 0
     width: 100vw
+    padding-bottom: 10vh
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
 
     .characterLi
       float: left
@@ -355,8 +484,20 @@ html, body
         font-size: 24px
         font-family: 'open_sansbold', sans-serif
         color: #FFFFFF
+        -webkit-touch-callout: none
+        -webkit-user-select: none
+        -khtml-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
 
       .characterLiCY
+        -webkit-touch-callout: none
+        -webkit-user-select: none
+        -khtml-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
         position: relative
         top: 72%
         left: 12%
@@ -392,6 +533,12 @@ html, body
           opacity: 0.3
 
 .websites
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
   position: relative
   display: block
   height: 100vh
@@ -400,6 +547,12 @@ html, body
   overflow-x: hidden
 
   h1
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
     position: relative
     left: 12vw
     top: 3.7%
@@ -413,6 +566,12 @@ html, body
     list-style: none
     top: 14vh
     left: 9vw
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
 
     .websiteLi
       display: block
@@ -442,8 +601,20 @@ html, body
         font-size: 24px
         font-family: 'open_sansbold', sans-serif
         color: #FFFFFF
+        -webkit-touch-callout: none
+        -webkit-user-select: none
+        -khtml-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
 
       .websiteLiCY
+        -webkit-touch-callout: none
+        -webkit-user-select: none
+        -khtml-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
         position: relative
         margin-left: 2vw
         top: 8vh
@@ -452,6 +623,12 @@ html, body
         color: #E91E63
 
       .websiteLiButton
+        -webkit-touch-callout: none
+        -webkit-user-select: none
+        -khtml-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
         text-decoration: none
         float: right
         margin-top: 2vh
@@ -480,6 +657,12 @@ html, body
           animation: exploreAnim 0.6s
 
 .otherWorks
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
   position: relative
   display: block
   height: 100vh
@@ -488,13 +671,25 @@ html, body
   overflow-x: hidden
 
   h1
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
     position: relative
     left: 12vw
-    top: 3.7%
+    top: 0.7%
     font-size: 24px
     font-family: 'open_sansbold', sans-serif
 
   .otherWorkUl
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
     position: relative
     display: block
     padding: 0
@@ -523,6 +718,12 @@ html, body
         transition: all 0.3s
 
       .otherWorkLiName
+        -webkit-touch-callout: none
+        -webkit-user-select: none
+        -khtml-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
         position: relative
         font-size: 38px
         top: 6vh
@@ -532,6 +733,12 @@ html, body
         transition: all 0.3s
 
       .otherWorkLiCY
+        -webkit-touch-callout: none
+        -webkit-user-select: none
+        -khtml-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
         position: relative
         top: 7vh
         margin-left: 3vw
@@ -541,6 +748,12 @@ html, body
         transition: all 0.3s
 
       .otherWorkLiButton
+        -webkit-touch-callout: none
+        -webkit-user-select: none
+        -khtml-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
         text-decoration: none
         position: absolute
         z-index: 3
@@ -565,6 +778,12 @@ html, body
         background-size: 50%
 
 .outro
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
   position: relative
   display: block
   height: 100vh
@@ -572,6 +791,12 @@ html, body
   overflow: hidden
 
   .social
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
     display: inline-block
     position: absolute
     left: 50%
@@ -579,6 +804,12 @@ html, body
     top: 32vh
 
     a
+      -webkit-touch-callout: none
+      -webkit-user-select: none
+      -khtml-user-select: none
+      -moz-user-select: none
+      -ms-user-select: none
+      user-select: none
       position: relative
       background: #D31027
       background: -webkit-linear-gradient(to right, #EA384D, #D31027)
@@ -605,6 +836,12 @@ html, body
         width: 2vw
 
   .thankyou
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
     display: inline-block
     position: absolute
     left: 50%
@@ -616,6 +853,12 @@ html, body
     top: 12vh
 
   .copyright
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
     display: inline-block
     position: absolute
     left: 50%
@@ -625,6 +868,14 @@ html, body
     font-family: 'open_sansbold', sans-serif
     color: #FFFFFF
     bottom: 10vh
+
+@keyframes scrollDownAnim
+  0%
+    bottom: 56px
+  50%
+    bottom: 72px
+  75%
+    bottom: 56px
 
 @keyframes exploreAnim
   0%
@@ -636,14 +887,127 @@ html, body
   100%
     transform: scale(1)
 
-@media (max-width: 767px)
+@media (max-width: 540px)
+  .ui
+    #menuButton
+      position: absolute
+      right: 50%
+      transform: translateX(50%)
+    #menu
+      #menuWrapper
+        .menuButtons
+          font-size: 32px
+
   .intro
     #teaser
       background: url('../images/teaser.png') center center / cover no-repeat
       video
         display: none
+
+  .aboutMe
+    overflow: scroll
+    overflow-x: hidden
+    #showreel
+      background: url('../images/showreel.png') center center / cover no-repeat
+      width: 72%
+      top: 16%
+      left: 50%
+      -webkit-transform: translateX(-50%)
+      -moz-transform: translateX(-50%)
+      -ms-transform: translateX(-50%)
+      transform: translateX(-50%)
+      height: 22%
+      video
+        display: none
+    #about
+      font-size: 12px
+      width: auto
+      float: left
+      left: 50%
+      -webkit-transform: translateX(-50%)
+      -moz-transform: translateX(-50%)
+      -ms-transform: translateX(-50%)
+      transform: translateX(-50%)
+      text-align: center
+      top: 17%
+
+      #explore
+        position: absolute
+        margin-left: -28%
+
+@media (min-width: 541px) and (max-width: 767px)
+  .ui
+    #menuButton
+      position: absolute
+      right: 50%
+      transform: translateX(50%)
+    #menu
+      #menuWrapper
+        .menuButtons
+          font-size: 32px
+
+  .intro
+    #teaser
+      background: url('../images/teaser.png') center center / cover no-repeat
+      video
+        display: none
+
   .aboutMe
     #showreel
       background: url('../images/showreel.png') center center / cover no-repeat
+      width: 72%
+      top: 16%
+      left: 50%
+      -webkit-transform: translateX(-50%)
+      -moz-transform: translateX(-50%)
+      -ms-transform: translateX(-50%)
+      transform: translateX(-50%)
+      height: 22%
       video
         display: none
+    #about
+      font-size: 14px
+      height: auto
+      width: auto
+      display: block
+      float: left
+      left: 50%
+      -webkit-transform: translateX(-50%)
+      -moz-transform: translateX(-50%)
+      -ms-transform: translateX(-50%)
+      transform: translateX(-50%)
+      text-align: center
+      top: 17%
+
+      #explore
+        display: block
+        position: absolute
+        margin-left: -28%
+
+@media (min-width: 768px) and (max-width: 1024px)
+  .aboutMe
+    overflow: scroll
+    overflow-x: hidden
+    #showreel
+      width: 72%
+      top: 16%
+      left: 50%
+      -webkit-transform: translateX(-50%)
+      -moz-transform: translateX(-50%)
+      -ms-transform: translateX(-50%)
+      transform: translateX(-50%)
+      height: 52%
+    #about
+      width: auto
+      float: left
+      left: 50%
+      -webkit-transform: translateX(-50%)
+      -moz-transform: translateX(-50%)
+      -ms-transform: translateX(-50%)
+      transform: translateX(-50%)
+      top: -15%
+
+@media (min-width: 1025px) and (max-width: 1600px)
+  .aboutMe
+    #showreel
+      width: 30%

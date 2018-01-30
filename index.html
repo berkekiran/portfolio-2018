@@ -24,6 +24,7 @@
     <script src="js/velocity.min.js"></script>
     <script src="js/player.min.js"></script>
     <link type="text/css" rel="stylesheet" href="css/portfolio.min.css">
+    <script src="js/jquery.scrollify.js"></script>
     <script src="js/portfolio.min.js"></script>
     <!--Favicons-->
   </head>
@@ -31,19 +32,30 @@
   <body ng-controller="portfolioController">
 
     <div class="ui">
-      <div id="menuButton">M</div>
+      <div ng-click="menuFunc()" id="menuButton">M</div>
+      <div id="menu">
+        <div id="menuWrapper">
+          <span ng-click="introMove()" class="menuButtons">Intro</span><br>
+          <span ng-click="aboutmeMove()" class="menuButtons">About Me</span><br>
+          <span ng-click="recentworksMove()" class="menuButtons">Recent Works</span><br>
+          <span ng-click="charactersMove()" class="menuButtons">Characters</span><br>
+          <span ng-click="websitesMove()" class="menuButtons">Websites</span><br>
+          <span ng-click="otherworksMove()" class="menuButtons">Other Works</span><br>
+          <span ng-click="outroMove()" class="menuButtons">Outro</span>
+        </div>
+      </div>
     </div>
 
-    <section class="intro">
+    <section data-section-name="intro" class="intro sectionClass">
       <div id="teaser">
         <video autoplay muted loop>
           <source src="../images/teaser.mp4" poster="../images/teaser.png" type="video/mp4">
         </video>
       </div>
-      <div id="scrollDown"></div>
+      <div id="scrollDown" onclick="$.scrollify.next()"></div>
     </section>
 
-    <section class="aboutMe">
+    <section data-section-name="aboutme" class="aboutMe sectionClass">
       <div id="showreel">
         <video autoplay muted loop>
           <source src="../images/showreel.mp4" type="video/mp4">
@@ -65,11 +77,11 @@
         engineering</span>.<br><br>
         If <span>you</span> have a <span>project</span> you'd like to <span>discuss</span>,<br>
         <span>feel free</span> to <a href="mailto:berkekiranofficial@hotmail.com?Subject=Hi Berke!">reach out.</a><br><br><br>
-        <span id="explore">Explore my Art</span>
+        <span id="explore" onclick="$.scrollify.next()">Explore my Art</span>
       </p>
     </section>
 
-    <section class="recentWorks">
+    <section data-section-name="recentworks" class="recentWorks sectionClass">
       <h1>Recent Works</h1>
       <h4>These are my <span>recent works</span>. If you want to <span>see more</span>, just <span>scroll down</span>.</h4>
       <div class="recentWorksLinksDiv">
@@ -88,7 +100,7 @@
       </div>
     </section>
 
-    <section class="characters">
+    <section data-section-name="characters" class="characters sectionClass">
       <div class="charactersNavi">
         <h1>Characters</h1>
         <span ng-click="characterNaviPrevClick()" class="characterNaviPrev">prev</span>
@@ -103,7 +115,7 @@
       </ul>
     </section>
 
-    <section class="websites">
+    <section data-section-name="websites" class="websites sectionClass">
       <h1>Websites</h1>
       <ul class="websiteUl">
         <li ng-style="{{website.Image}}" class="websiteLi" ng-repeat="website in works | filter: website.CategoryAlt = 'Websites'">
@@ -115,7 +127,7 @@
       </ul>
     </section>
 
-    <section class="otherWorks">
+    <section data-section-name="otherworks" class="otherWorks sectionClass">
       <h1>Other Works</h1>
       <ul class="otherWorkUl">
         <li class="otherWorkLi" ng-repeat="otherWork in works | filter: otherWork.CategoryAlt = 'Other Works'">
@@ -129,7 +141,7 @@
       </ul>
     </section>
 
-    <section class="outro">
+    <section data-section-name="outro" class="outro sectionClass">
       <span class="thankyou">THANK YOU!</span><br>
       <div class="social">
         <a target="_blank" href="https://www.linkedin.com/in/berkekiran/"><img src="images/social/linkedin-logo.svg" /></a>

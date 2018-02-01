@@ -8,8 +8,7 @@ html, body {
   width: 100vw;
   height: auto;
   overflow-x: hidden;
-  background: linear-gradient(90deg, #0A1612 70px, transparent 1%) center, linear-gradient(#0A1612 70px, transparent 1%) center, #242424;
-  background-size: 72px 72px; }
+  background: #0A1612; }
 
 ::selection {
   background: #E91E63;
@@ -824,113 +823,14 @@ html, body {
   100% {
     transform: scale(1); } }
 
-@media (max-width: 540px) {
-  .ui #menuButton {
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%); }
-  .ui #menu #menuWrapper .menuButtons {
-    font-size: 32px; }
-  .intro #teaser {
-    background: url("../images/teaser.png") center center/cover no-repeat; }
-    .intro #teaser video {
-      display: none; }
-  .aboutMe {
-    overflow: scroll;
-    overflow-x: hidden; }
-    .aboutMe #showreel {
-      background: url("../images/showreel.png") center center/cover no-repeat;
-      width: 72%;
-      top: 16%;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-      -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
-      height: 22%; }
-      .aboutMe #showreel video {
-        display: none; }
-    .aboutMe #about {
-      font-size: 12px;
-      width: auto;
-      float: left;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-      -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
-      text-align: center;
-      top: 17%; }
-      .aboutMe #about #explore {
-        position: absolute;
-        margin-left: -28%; } }
-
-@media (min-width: 541px) and (max-width: 767px) {
-  .ui #menuButton {
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%); }
-  .ui #menu #menuWrapper .menuButtons {
-    font-size: 32px; }
+@media (max-width: 767px) {
   .intro #teaser {
     background: url("../images/teaser.png") center center/cover no-repeat; }
     .intro #teaser video {
       display: none; }
   .aboutMe #showreel {
-    background: url("../images/showreel.png") center center/cover no-repeat;
-    width: 72%;
-    top: 16%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    height: 22%; }
+    background: url("../images/showreel.png") center center/cover no-repeat; }
     .aboutMe #showreel video {
-      display: none; }
-  .aboutMe #about {
-    font-size: 14px;
-    height: auto;
-    width: auto;
-    display: block;
-    float: left;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    text-align: center;
-    top: 17%; }
-    .aboutMe #about #explore {
-      display: block;
-      position: absolute;
-      margin-left: -28%; } }
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .aboutMe {
-    overflow: scroll;
-    overflow-x: hidden; }
-    .aboutMe #showreel {
-      width: 72%;
-      top: 16%;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-      -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
-      height: 52%; }
-    .aboutMe #about {
-      width: auto;
-      float: left;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-      -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
-      top: -15%; } }
-
-@media (min-width: 1025px) and (max-width: 1600px) {
-  .aboutMe #showreel {
-    width: 30%; } }
+      display: none; } }
 
 /*# sourceMappingURL=portfolio.css.map */

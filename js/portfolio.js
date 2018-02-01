@@ -329,17 +329,6 @@ app.controller('portfolioController', function($scope) {
     menuControl = false;
   };
 
-  var movementStrength = 25;
-  var height = movementStrength / $(window).height();
-  var width = movementStrength / $(window).width();
-  $("body").mousemove(function(e){
-    var pageX = e.pageX - ($(window).width() / 2);
-    var pageY = e.pageY - ($(window).height() / 2);
-    var newvalueX = width * pageX * -1 - 25;
-    var newvalueY = height * pageY * -1 - 50;
-    $('body').css("background-position", newvalueX+"px     "+newvalueY+"px");
-  });
-
   var menuControl = false;
   $('#menu').css({'display': 'none', 'opacity': '0'});
   $('#menuButton').css('color', '#E91E63');
